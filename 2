@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 para soportar caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Asegura que la página sea responsive en dispositivos móviles -->
+    <title>Formulario de Google</title>
+    <style>
+        /* Configuración básica para que la página ocupe el 100% del espacio disponible */
+        html, body {
+            height: 100%; /* Asegura que la altura del HTML y body sea del 100% de la pantalla */
+            margin: 0; /* Elimina los márgenes por defecto */
+            padding: 0; /* Elimina el relleno por defecto */
+            font-family: Arial, sans-serif; /* Establece una fuente predeterminada */
+        }
+
+        /* Contenedor del formulario, permitiendo desplazamiento si es necesario */
+        .scroll-wr {
+            -webkit-overflow-scrolling: touch; /* Habilita desplazamiento suave en dispositivos móviles */
+            overflow: auto; /* Agrega barra de desplazamiento solo cuando el contenido lo necesita */
+            width: 100%; /* Ocupa todo el ancho disponible */
+            height: 100vh; /* Altura del contenedor igual a la altura del viewport (pantalla) */
+            margin: 0; /* Elimina márgenes */
+            padding: 0; /* Elimina relleno */
+            box-sizing: border-box; /* Incluye bordes y relleno en el cálculo del ancho/alto */
+        }
+
+        /* Estiliza el iframe para que ocupe todo el espacio dentro del contenedor */
+        iframe {
+            width: 100%; /* Ajusta el ancho del iframe al 100% del contenedor */
+            height: 100%; /* Ajusta la altura del iframe al 100% del contenedor */
+            border: none; /* Elimina cualquier borde predeterminado del iframe */
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenedor principal que controla el scroll y el espacio del formulario -->
+    <div class="scroll-wr">
+        <!-- Iframe para incrustar el formulario de Google -->
+        <iframe 
+            src="https://forms.gle/YGKAfNeWnSoTYdHi9" <!-- Enlace al formulario de Google Forms -->
+            scrolling="yes"> <!-- Habilita el desplazamiento dentro del iframe -->
+        </iframe>
+    </div>
+</body>
+</html>
